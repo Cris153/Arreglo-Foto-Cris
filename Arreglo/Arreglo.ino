@@ -1,4 +1,4 @@
-int serie1[10]= {30, 14, 1, 36,40,5,23,55,17,2};
+int escabio[10]= {30, 14, 1, 36,40,5,23,55,17,2};
 int serie2[10];
 int dato;
 int dato_ant;
@@ -11,7 +11,7 @@ pinMode(2,INPUT);
   for(int a = 0; a < 10 ; a++){
     Serial.print(a);
     Serial.print("serie1 desordenado:");
-    Serial.println(serie1[a]);
+    Serial.println(escabio[a]);
     delay(500);
   }
   
@@ -24,11 +24,11 @@ void loop() {
 void ordenar(int valor){
     for(int i= 1; i < 11; i++){
     for( int d= 1; d < 11; d++){
-      dato=dato_ant+funcion(serie1[i],serie1[d],valor); 
+      dato=dato_ant+funcion(escabio[i],escabio[d],valor); 
       dato_ant=dato;     
       
     }
-    serie2[dato]=serie1[i];
+    serie2[dato]=escabio[i];
     dato=0;
     dato_ant=0;
   } 
