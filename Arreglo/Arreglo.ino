@@ -1,3 +1,5 @@
+#include(0);
+
 int serie1[10]= {30, 14, 1, 36,40,5,23,55,17,2};
 int serie2[10];
 int dato;
